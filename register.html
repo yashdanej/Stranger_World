@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrangerWorld: Register</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<style>
+    @media only screen and (max-width: 999px) {
+        .banner{
+            width: 100%;
+        }
+        .horizontal{
+            margin-top: 20rem;
+        }
+        .mt{
+            margin-top:5rem
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        .horizontal{
+            margin-top: 10rem;
+        }
+        .heading{
+            width: 40%;
+          }
+      }
+      @media only screen and (max-width: 400px) {
+        .horizontal{
+            margin-top: 5rem;
+        }
+      }
+</style>
+</head>
+<body>
+    <div style="height:100vh">
+        <div class="d-flex p-3 w-100 nav">
+            <a class="text-decoration-none rounded mx-2" href="index.html"><button style="background: black;border: none;" class="m-4 text-white">Home</button></a>
+            <a class="text-decoration-none rounded mx-2" href="register.html"><button class="m-3 fw-bold text-white btn btn-success">Register</button></a>
+            <a class="text-decoration-none rounded mx-2" href="login.html"><button style="background: black;border: none;" class="m-4 text-white">Login</button></a>
+            <a class="text-decoration-none rounded mx-2" href="aboutus.html"><button style="background: black;border: none;" class="m-4 text-white">About Us</button></a>
+            <a class="text-decoration-none rounded mx-2" href="feedback.html"><button  style="background: black;border: none;" class="m-4 text-white">Feedback</button></a>
+        </div>
+        <div class="bk-image">
+            <img class="banner"src="Images/Banner.jpg" width="75%"  alt="">
+            <img class="heading"src="Images/Heading.png" width="20%"  alt="">
+            <div class="text-light para"style="height:40%">
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <p><span>Starring:</span> Winona Ryder,David Harbour,Millie Bobby Brown</p>
+                <p><span>Creators:</span> The Duffer Brothers</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-light horizontal"><hr style="width: 100%"></div>
+
+    <div class="container my-5">
+        <form action="" class="mt">
+            <div class="form-group mt-3">
+                <span><input type="text" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="First Name" class="form-control rounded rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="text" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="Last Name" class="form-control rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="email" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="Email" class="form-control rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="password" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="Password" class="form-control rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="password" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="Confirm Password" class="form-control rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <textarea name="" placeholder="Address" class="form-control rounded" style="background: #121212;border: none;; color: #c2a89a" id="" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="text" style="background: #121212;border: none; border-radius:0; color: #c2a89a"placeholder="Mobile no" class="form-control rounded input-field" required></span>
+            </div>
+            <div class="form-group  mt-3">
+                <span><input type="radio" name="gender" style="background: #121212;border: none; border-radius:0" class="rounded input-field"> Male</span>
+                <span><input type="radio" name="gender" style="background: #121212;border: none; border-radius:0" class="rounded input-field"> FeMale</span>
+            </div>
+            <div class="form-group  mt-3">
+                <span>Select State:</span>
+                <select required class="form-control"style="background: #121212;border: none; border-radius:0; color:#c2a89a" name="selState">
+                    <option value="">-- Select Your State --</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat" selected="">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="form-group  mt-3">
+                <label style=" color:#c2a89a">Select your photo:</label>
+                <span><input required type="file" style="background: #121212;border: none; border-radius:0;"placeholder="Your photo" class="form-control rounded input-field"></span>
+            </div>
+            <div class="mt-3">
+                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container text-light"><hr style="width: 100%"></div>
+
+    <div class="container text-light">
+        <footer>
+            <p>&#169; StrangerWorld</p>
+        </footer>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

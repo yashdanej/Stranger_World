@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.nav{
+    overflow: auto;
+    background-color: black;
+}
+.banner{
+    float: right;
+}
+.info-container{
+    color: white;
+}
+.heading{
+    margin: 10% 0 0 50px;
+}
+.para{
+    padding: 30px 0 0 50px;
+}
+span{
+    color: #c2a89a;
+}
+
+.episode-thumbnail-image{
+    width: 100%;
+    margin-top: 30px;
+}
+.serif{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bolder;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.transition-1 img{
+    transition: 0.5s;
+}
+.transition-1:hover img{
+    border: 1px solid white;
+}
+.transion-video{
+    transition: 0.5s;
+}
+.transion-video:hover{
+    border: 1px solid white;
+}
+.arrow {
+    border: solid #c2a89a;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+#str2{
+    display: none;
+}
+#str3{
+    display: none;
+}
+#str4{
+    display: none;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrangerWorld: Home</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 992px) {
+            .forResponsive {
+              width: 50%;
+            }
+            .banner{
+                display:none;
+            }
+            .banner2{
+                display:block !important;
+            }
+            .forCenter{
+                margin: auto;
+            }
+          }
+          @media only screen and (max-width: 767px) {
+            .forResponsive {
+                width: 100%;
+              }
+              .heading{
+                width: 40%;
+              }
+          }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="d-flex p-3 w-100 nav">
+            <a class="text-decoration-none rounded mx-2" href="index.html"><button class="m-3 fw-bold btn btn-success">Home</button></a>
+            <a class="text-decoration-none rounded mx-2" href="register.html"><button style="background: black;border: none;" class="m-4 text-white">Register</button></a>
+            <a class="text-decoration-none rounded mx-2" href="login.html"><button style="background: black;border: none;" class="m-4 text-white">Login</button></a>
+            <a class="text-decoration-none rounded mx-2" href="aboutus.html"><button style="background: black;border: none;" class="m-4 text-white">About Us</button></a>
+            <a class="text-decoration-none rounded mx-2" href="feedback.html"><button style="background: black;border: none;" class="m-4 text-white">Feedback</button></a>
+        </div>
+        <div class="bk-image">
+            <img class="banner"src="Images/Banner.jpg" width="75%"  alt="">
+            <img class="banner2"src="Images/Stranger_Things__The_Experience.jpg" style="display: none;" width="100%"  alt="">
+            <img class="heading"src="Images/Heading.png" width="20%"  alt="">
+            <div class="text-light para">
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <p><span>Starring:</span> Winona Ryder,David Harbour,Millie Bobby Brown</p>
+                <p><span>Creators:</span> The Duffer Brothers</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-light"><hr style="width: 100%"></div>
+    <div class="container text-light">
+        <h3 class="roboto">Videos<span class="roboto" style="font-size: 16px;"> | Stranger Things</span></h3>
+        
+    </div>
+    <div class="container my-5 m-auto text-light">
+        <div class="row my-5">
+            <div class="col-sm-6 fw-bold forCenter forResponsive transion-video">
+                <video width="100%" height="350px" class="v-1"poster="Images/Title/strangerthings1.jpg" controls>
+                    <source src="Videos/ST1.mp4" type="video/mp4">
+                 </video>
+                 <p>Stranger things 1 (Trailer)</p>
+            </div>
+            <div class="col-sm-6 fw-bold forCenter forResponsive transion-video">
+                <video width="100%" height="350px" class="v-1"poster="Images/Title/ST2.jpg" controls>
+                    <source src="Videos/ST2.mp4" type="video/mp4">
+                 </video>
+                 <p>Stranger things 2 (Trailer)</p>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 fw-bold forCenter forResponsive transion-video">
+                <video width="100%" height="350px" class="v-1"poster="Images/Title/ST3.jpg" controls>
+                    <source src="Videos/ST3.mp4" type="video/mp4">
+                 </video>
+                 <p>Stranger things 3 (Trailer)</p>
+            </div>
+            <div class="col-sm-6 fw-bold forCenter forResponsive transion-video">
+                <video width="100%" height="350px" class="v-1"poster="Images/Title/ST4.jpg" controls>
+                    <source src="Videos/ST4.mp4" type="video/mp4">
+                 </video>
+                 <p>Stranger things 4 (Trailer)</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-light"><hr style="width: 100%"></div>
+    <div class="container text-light">
+        <h3 class="roboto">Episodes<span class="roboto" style="font-size: 16px;"> | Stranger Things Series</span></h3> 
+        <select id="stranger" onchange="getSeason()" class="form-select roboto" style="background: black; color: #c2a89a; border: 1px solid grey;width: 200px;" aria-label="Default select example">
+            <option value="season1" selected>Stranger Things 1</option>
+            <option value="season2">Stranger Things 2 </option>
+            <option value="season3">Stranger Things 3 </option>
+            <option value="season4">Stranger Things 4 </option>
+        </select>
+    </div>
+    <div id="str1" class="container">
+        <p class="roboto pt-2 text-light">Release year: 2016</p>
+        <p><span style="font-size:16px">Strange things are afoot in Hawkins, Indiana, where a young boy's sudden <br> 
+            disappearance unearths a young girl with otherworldly powers.</span></p>
+        <div class="intro m-auto">
+            <div class="row">
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img class="episode-thumbnail-image rounded" src="Images/Stranger1/1.jpg" alt="">
+                    <p class="fw-bold text-light">1. Chapter One: The Vanishing of Will Byers</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/2.jpg" alt="">
+                    <p class="fw-bold text-light">2. Chapter Two: The Weirdo on Maple Street</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/3.jpg" alt="">
+                    <p class="fw-bold text-light">3. Chapter Three: Holly, Jolly</p>
+
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/4.jpg" alt="">
+                    <p class="fw-bold text-light">4. Chapter Four: The Body</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-3  transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/5.jpg" alt="">
+                    <p class="fw-bold text-light">5. Chapter Five: The Flea</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/6.jpg" alt="">
+                    <p class="fw-bold text-light">6. Chapter Six: The Monster</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/7.jpg" alt="">
+                    <p class="fw-bold text-light">7. Chapter Seven: The Bathtub</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger1/8.jpg" alt="">
+                    <p class="fw-bold text-light">8. Chapter Eight: The Upside Down</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="str2" class="container">
+        <p class="roboto pt-2 text-light">Release year: 2017</p>
+        <p><span style="font-size:16px">It's been nearly a year since Will's strange disappearance.But life's hardly<br> 
+             back to normal in Hawkins. Not even close.
+        </span></p>
+        <div class="intro m-auto">
+            <div class="row">
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img class="episode-thumbnail-image rounded" src="Images/Stranger2/1.jpg" alt="">
+                    <p class="fw-bold text-light">1. Chapter One: MADMAX</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/2.jpg" alt="">
+                    <p class="fw-bold text-light">2. Chapter Two: Trick or Treat, Freak</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/3.jpg" alt="">
+                    <p class="fw-bold text-light">3. Chapter Three: The Pollywog</p>
+
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/4.jpg" alt="">
+                    <p class="fw-bold text-light">4. Chapter Four: Will the Wise</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-3  transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/5.jpg" alt="">
+                    <p class="fw-bold text-light">5. Chapter Five: Dig Dug<p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/6.jpg" alt="">
+                    <p class="fw-bold text-light">6. Chapter Six: The Spy</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/7.jpg" alt="">
+                    <p class="fw-bold text-light">7. Chapter Seven: The Lost Sister</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/8.jpg" alt="">
+                    <p class="fw-bold text-light">8. Chapter Eight: The Mind Flayer</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger2/8.jpg" alt="">
+                    <p class="fw-bold text-light">9. Chapter Nine: The Gate</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="str3" class="container">
+        <p class="roboto pt-2 text-light">Release year: 2019</p>
+        <p><span style="font-size:16px">Budding romance. A brand-new mall. And rabid rats running toward danger,<br> 
+            It's the summer of 1985 in Hawkins ... and one summer can change everything.</span></p>
+        <div class="intro m-auto">
+            <div class="row">
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img class="episode-thumbnail-image rounded" src="Images/Stranger3/1.jpg" alt="">
+                    <p class="fw-bold text-light">1. Chapter One: Suzie, Do You Copy?
+                    </p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/2.jpg" alt="">
+                    <p class="fw-bold text-light">2. Chapter Two: The Mall Rats
+                    </p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/3.jpg" alt="">
+                    <p class="fw-bold text-light">3. Chapter Three: The Case of Missing Lifeguard</p>
+
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/4.jpg" alt="">
+                    <p class="fw-bold text-light">4. Chapter Four: The Sauna Test</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-3  transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/5.jpg" alt="">
+                    <p class="fw-bold text-light">5. Chapter Five: The Flayed</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/6.jpg" alt="">
+                    <p class="fw-bold text-light">6. Chapter Six: E Pluribus Unum</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/7.jpg" alt="">
+                    <p class="fw-bold text-light">7. Chapter Seven: The Bite</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger3/8.jpg" alt="">
+                    <p class="fw-bold text-light">8. Chapter Eight: The Battle of Starcourt</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="str4" class="container">
+        <p class="roboto pt-2 text-light">Release year: 2022</p>
+        <p><span style="font-size:16px">Darkness returns to Hawkins just in time for spring break igniting,<br>
+            fresh terror disturbing memories — and an ominous new threat.</span></p>
+        <div class="intro m-auto">
+            <div class="row">
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img class="episode-thumbnail-image rounded" src="Images/Stranger4/1.jpg" alt="">
+                    <p class="fw-bold text-light">1. Chapter One: The Hellfire Club</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/2.jpg" alt="">
+                    <p class="fw-bold text-light">2. Chapter Two: Vecna's Curse</p>
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/3.jpg" alt="">
+                    <p class="fw-bold text-light">3. Chapter Three: The Monster and the Superhero</p>
+
+                </div>
+                <div class="col-sm-5  col-md-6 col-lg-3 transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/4.jpg" alt="">
+                    <p class="fw-bold text-light">4. Chapter Four: Dear Billy</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-3  transition-1 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/5.jpg" alt="">
+                    <p class="fw-bold text-light">5. Chapter Five: The Nina Project</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/6.jpg" alt="">
+                    <p class="fw-bold text-light">6. Chapter Six: The Dive</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/7.jpg" alt="">
+                    <p class="fw-bold text-light">7. Chapter Seven: The Massacre at Hawkins Lab</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/8.jpg" alt="">
+                    <p class="fw-bold text-light">8. Chapter Eight: Papa</p>
+
+                </div>
+                <div class="col-sm-5  transition-1 col-md-6 col-lg-3 div-responsive">
+                    <img  class="episode-thumbnail-image rounded" src="Images/Stranger4/9.jpg" alt="">
+                    <p class="fw-bold text-light">9. Chapter Nine: The Piggyback</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-light"><hr style="width: 100%"></div>
+    <div class="container text-light">
+        <footer>
+            <p>&#169; StrangerWorld</p>
+        </footer>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
